@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="ProcessFlow example" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8">
+  <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
+          id="sap-ui-bootstrap" 
+          data-sap-ui-theme="sap_bluecrystal" 
+          data-sap-ui-libs="sap.ui.commons,sap.m,sap.suite.ui.commons">
+  </script>
+    <script>
+      //sap.ui.localResources("resources");
+      //Register your application js
+      jQuery.sap.registerModulePath('controllers', './js/controllers/');
+      jQuery.sap.registerModulePath('views', './js/views/');      
+      
+      // Load your application js
+      jQuery.sap.require("controllers.Application");
+      //Create an object of the Application class and set content as root
+      //the DIV content will be used to put the views in
+      var app = new Application({ root : "content" });
+    </script>  
+  <title>ProcessFlow example</title>
+</head>
+
+<body class="sapUiBody">
+  <div id="content"></div> 
+</body>
+</html>
